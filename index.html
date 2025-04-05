@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="add-course">
+      <div class="container">
+        <h1>CRUD System</h1>
+        <form id="courseForm">
+          <div class="mb-3">
+            <label for="">Course Name</label>
+            <input
+              class="inputs form-control"
+              type="text"
+              placeholder="Course name"
+              id="courseName"
+            />
+          </div>
+          <label for="">Course Category</label>
+          <input
+            class="inputs form-control"
+            type="text"
+            placeholder="Course category"
+            id="courseCategory"
+          />
+
+          <label for="">Course Price</label>
+          <input
+            class="inputs form-control"
+            type="number"
+            placeholder="Course price"
+            id="coursePrice"
+          />
+
+          <label for="">Course Description</label>
+          <textarea
+            class="inputs form-control"
+            placeholder="Course description"
+            id="courseDescription"
+          ></textarea>
+
+          <label for="">Course Capacity</label>
+          <input
+            class="inputs form-control"
+            type="number"
+            placeholder="Course capacity"
+            id="courseCapacity"
+          />
+
+          <input
+            type="submit"
+            value="Add Course"
+            class="btn btn-outline-secondary mt-3"
+          />
+          <button class="btn btn-outline-secondary mt-3" type="reset">
+            Clear
+          </button>
+        </form>
+      </div>
+      <div class="container">
+        <input
+          type="search"
+          placeholder="Search..."
+          id="search"
+          class="form-control my-3"
+        />
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Course Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Capacity</th>
+              <th>Update</th>
+            </tr>
+          </thead>
+          <tbody id="data"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
